@@ -1,5 +1,9 @@
 # Docker mnist show
 
+# Details
+
+[Medium Blog](https://jerin-electronics.medium.com/docker-now-ep1-python-opencv-in-docker-1dda564672c3)
+
 ## Install docker and nvidia-docker2
 
 [Follow the steps here](https://cnvrg.io/how-to-setup-docker-and-nvidia-docker-2-0-on-ubuntu-18-04/)
