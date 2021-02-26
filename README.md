@@ -2,7 +2,7 @@
 
 # Details
 
-[Medium Blog](https://jerin-electronics.medium.com/docker-now-ep1-python-opencv-in-docker-1dda564672c3)
+[Medium Blog : https://jerin-electronics.medium.com/docker-now-ep1-python-opencv-in-docker-1dda564672c3](https://jerin-electronics.medium.com/docker-now-ep1-python-opencv-in-docker-1dda564672c3)
 
 ## Install docker and nvidia-docker2
 
