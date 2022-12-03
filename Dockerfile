@@ -12,11 +12,11 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-      xcb \ 
-      libglib2.0-0 \
-      libgl1-mesa-glx && \
-    rm -rf /var/lib/apt/lists/*
+# RUN apt-get update && apt-get install -y --no-install-recommends \
+#      xcb \ 
+#      libglib2.0-0 \
+#      libgl1-mesa-glx && \
+#    rm -rf /var/lib/apt/lists/*
     
 # Setting up working directory 
 RUN mkdir /src

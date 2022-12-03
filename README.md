@@ -12,8 +12,6 @@
 
 [Orientation and setup](https://docs.docker.com/get-started/)
 
-
- 
 ## Running cpu docker image
 
 ```
