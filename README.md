@@ -28,11 +28,24 @@ python3 show.py
 ```
 
 
-## Building Docker Image and pushing to Dockerhub
+## Building Docker Image, running, and pushing to Dockerhub
+
+build: 
 
 ```
 docker build -t jerinka/opencv:1 .
 ```
+
+run:
+
+```
+sh runDocker.sh
+```
+
+You should see a window popping up. 
+
+push:
+
 ```
 docker push jerinka/opencv:1
 ```
