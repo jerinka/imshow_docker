@@ -1,10 +1,23 @@
 # Docker mnist show
 
-# Details
+## Details
 
 [Medium Blog : https://jerin-electronics.medium.com/docker-now-ep1-python-opencv-in-docker-1dda564672c3](https://jerin-electronics.medium.com/docker-now-ep1-python-opencv-in-docker-1dda564672c3)
 
-## Install docker and nvidia-docker2
+## Install docker
+
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+```
+- logout and login again
+- `docker ps`
+- if permission denied, try above usermod command and logout-login
+
+## Install docker and nvidia-docker2 (optional -for gpu support)
 
 [Follow the steps here](https://cnvrg.io/how-to-setup-docker-and-nvidia-docker-2-0-on-ubuntu-18-04/)
 
@@ -12,17 +25,21 @@
 
 [Orientation and setup](https://docs.docker.com/get-started/)
 
-## Running cpu docker image
+```bash
+docker run hello-world
+```
 
+## Run docker and get bash
+
+```bash
+./docker-run.sh
 ```
-bash runDocker.sh
-```
- 
  
 ## Running imshow example 
 
-```
+```bash
 python3 show.py
+exit
 ```
 
 
@@ -30,21 +47,23 @@ python3 show.py
 
 build: 
 
-```
+```bash
 docker build -t jerinka/opencv:1 .
 ```
 
 run:
 
+```bash
+./docker-run.sh python show.py
 ```
-sh runDocker.sh
-```
-
-You should see a window popping up. 
 
 push:
 
-```
+```bash
+docker login
 docker push jerinka/opencv:1
 ```
 
+## More Lerning
+
+- [Udemy course on CICD](https://www.udemy.com/course/gitlab-cicd-essentials-for-industry-comprehensive-tutorial/?referralCode=78BD52230019795171CF): How to create a CI/CD pipeline for your project uing docker or shell.
