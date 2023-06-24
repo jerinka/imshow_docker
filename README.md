@@ -66,4 +66,5 @@ docker push jerinka/opencv:1
 
 ## More Lerning
 
-- [Udemy course on CICD](https://www.udemy.com/course/gitlab-cicd-essentials-for-industry-comprehensive-tutorial/?referralCode=78BD52230019795171CF): How to create a CI/CD pipeline for your project uing docker or shell.
+- Deep Learning with Tensorflow and Pytorch Udemy Course: enroll [link](https://www.udemy.com/course/draft/5393356/?referralCode=A7ECC1BFDDB640FCED3E)
+- GitLab CICD Udemy Course: enroll [link](https://www.udemy.com/course/gitlab-cicd-essentials-for-industry-comprehensive-tutorial/?referralCode=78BD52230019795171CF)
